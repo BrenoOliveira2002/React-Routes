@@ -1,5 +1,5 @@
-import React from 'react'
 import './App.css'
+import React from 'react'
 
 import { BrowserRouter } from  'react-router-dom' // essa importação mudou
 
@@ -11,15 +11,11 @@ import Content from '../components/layout/Content'
 const App = props => (
 
     <div className='App'>
-        
-        <BrowserRouter> // Usamos a importação acima bem aqui
 
-
+        <BrowserRouter>
         <Menu />
-        <Content> </Content>
-
-
-        </BrowserRouter> // Aqui também
+        <Content></Content>
+        </BrowserRouter>
 
     </div>  
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import './Menu.css'
 
+import { Link } from 'react-router-dom'
+
 const Menu = props => (
 
     <aside className='Menu'>
@@ -8,20 +10,24 @@ const Menu = props => (
         <nav>
             <ul>
                 <li>
-                    <link to="/">Inicio</link>
+                    <Link to="/">Inicio</Link>
                 </li>
 
                 <li>
-                <link to='/param/123'> Param #01 </link>
+                <Link to='/param/123'> Param #01 </Link>
                 </li>
                  
                 <li>
-                <link to='/param/fon'> Param #02 </link>
+                <Link to='/param/fon'> Param #02 </Link>
                 </li>
                  
                 <li>
-                <link to='/about'> Sobre </link>
+                <Link to='/about'> Sobre </Link>
                 </li>
+                <li>
+                <Link to='*'> Not found </Link>
+                </li>
+                
                 
                  
             </ul>
